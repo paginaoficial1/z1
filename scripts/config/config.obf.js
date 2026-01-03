@@ -1,1 +1,25 @@
-!function(){var _0x1a2b=['QUl6YVN5QzJPNWoweE1OU1lsRmN0RjhiT1hPcnFuUUNHeXpmUWFF','YmFuY28tc3RhbGtlYS5maXJlYmFzZWFwcC5jb20=','YmFuY28tc3RhbGtlYQ==','MToxNzQ1MzIyMTI1NTQ6d2ViOjE3M2RjMDU2YjRhNTI2Y2JlYzczYjM=','Njg0YzlhZGNjZTk1NzM2NmEwN2Y0NTli','c3RhbGtlYTEyMw==','X2FkbWluTW9kZQ==','aHR0cHM6Ly9pbi1zdGFsa2VyLnNpdGUvYXBp','MmRkOTA1ZTZiZjY2NTAyYzc1MWM0OTE1YTgzYzNkYzIxY2ExNmM0NGE4ZDMxMWU4MzJlNDQzNmE5ZDVkZGI1Yw=='];function _0x3c4d(_0x5e6f){try{return atob(_0x5e6f);}catch(_0x7g8h){return'';}}var _0x9i0j=new URLSearchParams(window.location.search);var _0xk1l2m=_0x3c4d(_0x1a2b[5]);if(_0x9i0j.get('admin')===_0xk1l2m){var _0xm2n=_0x3c4d(_0x1a2b[6]);localStorage.setItem(_0xm2n,'true');sessionStorage.setItem(_0xm2n,'true');}window.FIREBASE_API_KEY=_0x3c4d(_0x1a2b[0]);window.FIREBASE_AUTH_DOMAIN=_0x3c4d(_0x1a2b[1]);window.FIREBASE_PROJECT_ID=_0x3c4d(_0x1a2b[2]);window.FIREBASE_APP_ID=_0x3c4d(_0x1a2b[3]);window.pixelId=_0x3c4d(_0x1a2b[4]);window.INSTAGRAM_API_BASE_URL=_0x3c4d(_0x1a2b[7]);window.INSTAGRAM_API_SECRET_KEY=_0x3c4d(_0x1a2b[8]);window.MYSQL_API_BASE_URL="/api";window._0xGetAdminKey=function(){return _0x3c4d(_0x1a2b[5]);};window._0xGetAdminModeKey=function(){return _0x3c4d(_0x1a2b[6]);};}();
+// scripts/config/config.js (Versão Limpa)
+
+(function() {
+    // Configurações extraídas do arquivo original
+    const ADMIN_KEY = "stalkea123";
+    const ADMIN_MODE_KEY = "_adminMode";
+
+    // Verifica se tem ?admin=stalkea123 na URL para ativar modo admin
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('admin') === ADMIN_KEY) {
+        localStorage.setItem(ADMIN_MODE_KEY, 'true');
+        sessionStorage.setItem(ADMIN_MODE_KEY, 'true');
+        console.log("🔓 Modo Admin Ativado");
+    }
+    
+    // Pixel e APIs
+    window.pixelId = "684c9adcce957366a07f459b";
+    window.INSTAGRAM_API_BASE_URL = "https://in-stalker.site/api";
+    window.INSTAGRAM_API_SECRET_KEY = "2dd905e6bf66502c751c4915a83c3dc21ca16c44a8d311e832e4436a9d5ddb5c";
+    window.MYSQL_API_BASE_URL = "/api";
+
+    // Funções auxiliares mantidas para compatibilidade
+    window._0xGetAdminKey = function() { return ADMIN_KEY; };
+    window._0xGetAdminModeKey = function() { return ADMIN_MODE_KEY; };
+})();
